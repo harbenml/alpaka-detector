@@ -18,8 +18,6 @@ from fastai.vision.widgets import *
 
 key = os.environ.get('AZURE_SEARCH_KEY', 'XXX')
 
-key
-
 results = search_images_bing(key, 'grizzly bear')
 ims = results.attrgot('content_url')
 len(ims)
